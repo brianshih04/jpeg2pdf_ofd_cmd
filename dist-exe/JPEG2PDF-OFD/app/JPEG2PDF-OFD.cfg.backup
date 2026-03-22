@@ -1,6 +1,6 @@
 [Application]
 app.classpath=$APPDIR\jpeg2pdf-ofd-1.0.0.jar
-app.mainclass=org.springframework.boot.loader.launch.JarLauncher
+app.mainclass=com.ocr.jpeg2pdf.CliApplication
 
 [JavaOptions]
 java-options=-Djpackage.app-version=1.0.0

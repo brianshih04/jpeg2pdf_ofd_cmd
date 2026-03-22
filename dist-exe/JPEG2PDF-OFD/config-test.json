@@ -1,0 +1,10 @@
+﻿{
+    "input":  "C:/OCR/Watch",
+    "ocr":  {
+                "language":  "chinese_cht"
+            },
+    "output":  {
+                   "folder":  "C:/OCR/Output",
+                   "format":  "all"
+               }
+}
