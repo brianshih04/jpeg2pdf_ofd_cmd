@@ -48,7 +48,7 @@ jpackage ^
   --name "JPEG2PDF-OFD" ^
   --input target ^
   --main-jar jpeg2pdf-ofd-1.0.0.jar ^
-  --main-class com.ocr.jpeg2pdf.CliApplication ^
+  --main-class org.springframework.boot.loader.launch.JarLauncher ^
   --type app-image ^
   --dest dist-exe ^
   --java-options "-Xmx2G" ^
