@@ -9,7 +9,9 @@ import com.ocr.jpeg2pdf.service.TextService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -59,8 +61,11 @@ public class CliApplication implements CommandLineRunner {
     public static void main(String[] args) {
         // 禁用 Spring Boot 的图形界面
         System.setProperty("java.awt.headless", "true");
-        
-        SpringApplication.run(CliApplication.class, args);
+
+        // 禁用 Web Server（純命令行模式）
+        new SpringApplicationBuilder(CliApplication.class)
+            .web(WebApplicationType.NONE)  // 不啟動 Tomcat
+            .run(args);
     }
     
     @Override

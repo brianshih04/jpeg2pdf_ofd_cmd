@@ -1,13 +1,13 @@
-{
-  "input": {
-    "folder": "C:/OCR/Watch",
-    "pattern": "*.jpg"
-  },
-  "output": {
-    "folder": "C:/OCR/Output",
-    "format": "pdf"
-  },
-  "ocr": {
-    "language": "chinese_cht"
-  }
+﻿{
+    "input":  {
+                  "folder":  "C:/OCR/Watch",
+                  "pattern":  "*.jpg"
+              },
+    "ocr":  {
+                "language":  "chinese_cht"
+            },
+    "output":  {
+                   "folder":  "C:/OCR/Output",
+                   "format":  "pdf"
+               }
 }
