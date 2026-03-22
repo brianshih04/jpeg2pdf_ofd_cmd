@@ -1,0 +1,20 @@
+﻿{
+  "input": {
+    "folder": "./images",
+    "pattern": "*.jpg",
+    "recursive": true
+  },
+  "output": {
+    "folder": "./output",
+    "format": "pdf",
+    "filenameTemplate": "{original}_{timestamp}"
+  },
+  "ocr": {
+    "language": "chinese_cht",
+    "enabled": true
+  },
+  "logging": {
+    "level": "info",
+    "progress": true
+  }
+}

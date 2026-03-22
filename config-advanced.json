@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0",
+  
+  "input": {
+    "folder": "./images",
+    "pattern": "*.jpg",
+    "recursive": true
+  },
+  
+  "output": {
+    "folder": "./output",
+    "format": ["pdf", "ofd", "txt"],
+    "filenameTemplate": "{original}_{timestamp}",
+    "overwrite": false
+  },
+  
+  "ocr": {
+    "language": "chinese_cht",
+    "useAngleCls": true,
+    "minConfidence": 0.7
+  },
+  
+  "pdf": {
+    "invisibleText": true,
+    "textOpacity": 0.01,
+    "textColor": "white"
+  },
+  
+  "ofd": {
+    "invisibleText": true,
+    "textOpacity": 0.01,
+    "textColor": "white"
+  },
+  
+  "logging": {
+    "level": "info",
+    "file": "ocr.log",
+    "progress": true
+  }
+}
